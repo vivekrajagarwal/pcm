@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>PhoneCurry</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
         <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
     </head>
     <style>
@@ -13,16 +15,15 @@
     padding: 0px 30px;
     border-radius: 2px;
      }
-      .autocomplete-suggestions {
-    border: 2px solid #e3e3e3;
-    background: #fff;
+     .autocomplete-suggestions {
+    border: 1px solid #f8f9fa;
+    background: #f8fafc;
     overflow: auto;
-    /*font-size: 15px;*/
-    border-radius: 4px;
-    margin-top: 5px;
+    border-radius: 0px;
+    margin-top: 1px;
     color: #4a4a4a;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.13);
-      }
+    box-shadow: 0 4px 30px 0 rgba(0,0,0,.13);
+}
       </style>
     <script>
       $(document).ready(function(){
@@ -46,7 +47,6 @@
     });
 
     $(document).on('click', 'li', function(){  
-        $('#phone').val($(".name").text());  
         $('#result').fadeOut();  
     });  
 
